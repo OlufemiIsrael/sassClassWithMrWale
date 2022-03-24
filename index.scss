@@ -1,3 +1,37 @@
 @import "./styles/variable";
 @import "./styles/global";
 
+body{
+    background: $bodyBg;
+    height: 100vh;
+    background-repeat: no-repeat;
+    color: $questionColor;
+}
+main{
+    background-color: $mainBg;
+    width: 90%;
+    padding: 2vh 3vw;
+    min-height: 400px;
+    margin: 25vh auto;
+    border-radius: $borderRadius;
+    .topImage{
+        margin-top: -45%;
+    }
+}
+h1{
+    text-align: center;
+    // font-size: 16px;
+}
+p{
+    border-bottom: 1px solid #efefef;
+    padding: 2vh 1vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    img{
+        width: 5%;
+        height: 5%;
+        cursor: pointer;
+    }
+}
