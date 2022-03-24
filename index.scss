@@ -8,6 +8,8 @@ body{
     color: $questionColor;
 }
 main{
+    display: flex;
+    flex-direction: column;
     background-color: $mainBg;
     width: 90%;
     padding: 2vh 3vw;
@@ -16,6 +18,18 @@ main{
     border-radius: $borderRadius;
     .topImage{
         margin-top: -45%;
+    }
+    @media screen and (min-width: 800px) {
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        .topImage{
+            width: 50vw;
+            margin: 0 10px 0 0;
+        }
+        p{
+            font-size: 22px;
+        }
     }
 }
 h1{
@@ -34,4 +48,7 @@ p{
         height: 5%;
         cursor: pointer;
     }
+}
+#answer{
+    display: none;
 }
